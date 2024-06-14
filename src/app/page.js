@@ -10,10 +10,12 @@ export default function Home() {
   };
   return (
     <main className="flex flex-col items-center justify-between m-20">
-      <h1 className="text-5xl font-bold italic ">PomoZen</h1>
-      <h2 className="m-2">Calm Productivity</h2>
-      <Timer initialMinutes={25} />
-      <TodoList />
+      <div className="h-screen">
+        <h1 className="text-5xl font-bold italic items-center flex-col flex mt-20">PomoZen</h1>
+        <h2 className="m-2 items-center flex-col flex">Calm Productivity</h2>
+        <Timer initialMinutes={25} />
+        <TodoList />
+      </div>
       <InformationSection />
       <Footer />
     </main>

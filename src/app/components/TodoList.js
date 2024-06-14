@@ -30,8 +30,8 @@ const TodoList = () => {
   };
 
   return (
-    <div className="todo-list bg-gray-100 rounded-lg shadow-md p-4">
-      <h2 className="text-center text-2xl font-semibold text-gray-800">Tasks</h2>
+    <div className="todo-list bg-gray-700 rounded-lg shadow-md p-4">
+      <h2 className="text-center text-2xl font-semibold text-white">Tasks</h2>
       <div className="input-container flex justify-between items-center mt-4 space-x-4">
         <input
           type="text"
@@ -40,7 +40,7 @@ const TodoList = () => {
           onChange={handleInputChange}
           className="todo-input w-full px-4 py-2 rounded-md border border-gray-300 focus:outline-none focus:border-blue-500 text-black"
         />
-        <button onClick={handleAddTodo} className="add-button bg-blue-500 text-white px-4 py-2 rounded-md hover:bg-blue-700 focus:outline-none">
+        <button onClick={handleAddTodo} className="add-button bg-black text-white px-4 py-2 rounded-md hover:bg-blue-700 focus:outline-none font-bold">
           Add
         </button>
       </div>
