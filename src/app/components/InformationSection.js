@@ -4,7 +4,7 @@ import React from 'react';
 
 const InformationSection = () => {
   return (
-    <div className="information-section bg-white text-gray-700 mt-8 py-8 px-20 rounded-lg shadow-md">
+    <div className="information-section bg-white text-gray-700 mt-8 py-8 px-20 shadow-md">
       <h2 className='font-bold text-5xl pb-5'>What is the Pomodoro Technique?</h2>
       <p className='text-lg'>
         The Pomodoro Technique is a time management method that uses a timer to
