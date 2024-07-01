@@ -1,12 +1,15 @@
 // components/Timer.js
 "use client";
 import React, { useState, useEffect } from 'react';
+import ProgressBar from './ProgressBar';
 
 const Timer = () => {
   const [selectedDuration, setSelectedDuration] = useState(25); // Initial duration
   const [isTimerRunning, setIsTimerRunning] = useState(false);
   const [remainingSeconds, setRemainingSeconds] = useState(selectedDuration * 60);
   const [lastClickedButton, setLastClickedButton] = useState(25);
+  const totalDuration = selectedDuration * 60;
+
 
   useEffect(() => {
     const intervalId = setInterval(() => {
@@ -43,7 +46,7 @@ const Timer = () => {
   };
 
   return (
-    <div className="timer items-center justify-center p-8 rounded-lg shadow-md flex flex-col mt-36">
+    <div className="timer items-center justify-center p-8 rounded-lg shadow-md flex flex-col mt-24">
       <div>
         <button
           id="duration25"
@@ -85,7 +88,9 @@ const Timer = () => {
         >
           Reset
         </button> */}
+
       </div>
+      <ProgressBar progress={remainingSeconds} totalDuration={totalDuration} />
     </div>
   );
 };
