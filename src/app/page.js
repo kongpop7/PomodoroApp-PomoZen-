@@ -12,12 +12,12 @@ export default function Home() {
   return (
     <main className="">
       <div className="h-screen">
-        <Navbar />
         <Timer initialMinutes={25} />
         {/* <TodoList /> */}
       </div>
-      <InformationSection />
-      <Footer />
+      {/* <Navbar /> */}
+      {/* <InformationSection />
+      <Footer /> */}
     </main>
   );
 }
