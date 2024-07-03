@@ -20,7 +20,7 @@ const InformationSection = () => {
           </div>
         </div>
         <div className="md:w-1/2 p-2">
-          <div className=" p-4">ADD INFOGRAPHIC HERE</div>
+          <div className=" p-4">ADD INFOGRAPHIC HEREs</div>
         </div>
       </div>
     </div>  );
