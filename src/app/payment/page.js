@@ -20,11 +20,11 @@ const payment = () => {
   return (
     <div>
       <Navbar />
-      <div className='text-5xl font-bold flex align-center justify-center mt-8'>
+      <div className='text-5xl font-bold flex  justify-center mt-8'>
         <h1>Select Your Plan</h1>
       </div>
-      <div className="container mx-auto p-4">
-          <div className="flex flex-col md:flex-row justify-center items-center space-y-4 md:space-y-0 md:space-x-4">
+      <div className="">
+          <div className="flex flex-col md:flex-row justify-center items-center space-y-4 md:space-y-0 mt-8">
             <PricingPlanCard
               planName="Basic Plan"
               price={1.99}

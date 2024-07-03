@@ -6,7 +6,7 @@ import PropTypes from 'prop-types';
 const PricingPlanCard = ({ planName, price, features, buttonLabel, onButtonClick }) => {
   return (
     <div className="max-w-sm mx-auto bg-black border rounded-lg shadow-md overflow-hidden">
-      <div className="p-6">
+      <div className="p-6 lg:px-24">
         <h2 className="text-2xl font-bold text-white">{planName}</h2>
         <p className="mt-4 text-whites text-3xl">
           <span className="text-4xl font-extrabold">${price}</span>/month
@@ -15,7 +15,7 @@ const PricingPlanCard = ({ planName, price, features, buttonLabel, onButtonClick
           {features.map((feature, index) => (
             <li key={index} className="flex items-center text-white">
               <svg
-                className="w-5 h-5 mr-2 text-green-500"
+                className="w-5 h-5 mr-2 text-green-400"
                 fill="none"
                 stroke="currentColor"
                 viewBox="0 0 24 24"
