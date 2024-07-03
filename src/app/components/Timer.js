@@ -44,20 +44,20 @@ const Timer = () => {
   };
 
   return (
-    <div className="relative flex items-center justify-center min-h-screen p-8">
+    <div className="relative flex items-center justify-center min-h-screen p-4 sm:p-8">
       <div className="absolute top-0 left-0 w-full h-full bg-black">
         <div
           className="h-full bg-yellow-500"
           style={{ width: `${getElapsedPercentage()}%` }}
         />
       </div>
-      <div className="relative z-10 flex flex-col items-center justify-center p-8 mt-24">
-        <div>
+      <div className="relative z-10 flex flex-col items-center justify-center p-4 mt-12 sm:mt-24">
+        <div className="flex">
           <button
             id="duration25"
             name="duration"
             value={25}
-            className={`px-3 font-bold text-3xl ${
+            className={`px-2 sm:px-3 font-bold text-xl sm:text-3xl ${
               lastClickedButton === 25 ? 'underline underline-offset-8' : 'text-white'
             }`}
             onClick={() => handleDurationChange(25)}
@@ -68,31 +68,26 @@ const Timer = () => {
             id="duration5"
             name="duration"
             value={5}
-            className={`px-3 font-bold text-3xl ${
-              lastClickedButton === 5 ? 'underline underline-offset-8' : ''
+            className={`px-2 sm:px-3 font-bold text-xl sm:text-3xl ${
+              lastClickedButton === 5 ? 'underline underline-offset-8' : 'text-white'
             }`}
             onClick={() => handleDurationChange(5)}
           >
             Break
           </button>
         </div>
-        <h1 className="font-bold p-2 text-[256px] flex flex-row justify-center">{formatTime(remainingSeconds)}</h1>
-        {/* <h2 className="p-3 flex flex-col items-center">Select Duration</h2> */}
+        <h1 className="font-bold p-2 text-6xl sm:text-[256px] flex flex-row justify-center">
+          {formatTime(remainingSeconds)}
+        </h1>
         <div className="flex flex-row justify-center mt-4">
           <button
             onClick={handleToggleTimer}
-            className={`text-white hover:bg-white hover:text-black font-medium rounded-full text-5xl px-24 py-11 text-center justify-center border ${
-              isTimerRunning ? "bg-red hover:bg-black hover:text-black" : ""
+            className={`text-white hover:bg-white hover:text-black font-medium rounded-full text-2xl sm:text-5xl px-12 py-6 sm:px-24 sm:py-11 text-center justify-center border ${
+              isTimerRunning ? "bg-red hover:bg-black hover:text-black" : "bg-black"
             }`}
           >
             {isTimerRunning ? "Stop" : "Start"}
           </button>
-          {/* <button
-            onClick={handleReset}
-            className="text-white bg-gray-800 hover:bg-blue-700 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center justify-center"
-          >
-            Reset
-          </button> */}
         </div>
       </div>
     </div>
