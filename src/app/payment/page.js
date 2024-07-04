@@ -2,7 +2,7 @@
 import React from 'react'
 import Navbar from '../components/Navbar'
 import PricingPlanCard from '../components/PricingPlanCard'
-
+import { PackagesComponent } from '../components/PackagesComponent'
 
 
 const payment = () => {
@@ -20,12 +20,12 @@ const payment = () => {
   return (
     <div>
       <Navbar />
-      <div className='text-5xl font-bold flex  justify-center mt-8'>
+      {/* <div className='text-5xl font-bold flex  justify-center mt-8'>
         <h1>Select Your Plan</h1>
-      </div>
+      </div> */}
       <div className="">
           <div className="flex flex-col md:flex-row justify-center items-center space-y-4 md:space-y-0 mt-8">
-            <PricingPlanCard
+            {/* <PricingPlanCard
               planName="Basic Plan"
               price={1.99}
               features={features}
@@ -45,7 +45,8 @@ const payment = () => {
               features={features}
               buttonLabel="Choose Plan"
               onButtonClick={handleButtonClick}
-            />
+            /> */}
+            <PackagesComponent/>
           </div>
         </div>
     </div>
