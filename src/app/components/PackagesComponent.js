@@ -27,7 +27,7 @@ export const PackagesComponent = () => {
           Most Popular
         </div>
           <div className="text-white font-bold mt-4">Pro Zen</div>
-          <div className="text-5xl mt-5 font-bold">$0.99</div>
+          <div className="text-5xl mt-5 font-bold">$4.99</div>
           <button
             className="mt-5 mb-2 w-full borde border-green-400 whitespace-nowrap font-bold px-12 py-5 lg:px-16 max-sm:px-4 max-sm:py-2 rounded-xl bg-green-600 text-white text-xl max-sm:text-lg hover:bg-green-800 transition-all"
           >
