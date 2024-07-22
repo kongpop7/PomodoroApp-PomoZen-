@@ -21,9 +21,14 @@ const Navbar = () => {
             <p >Settings</p>
           </a>
         </Link>
-        <Link href="/" legacyBehavior>
+        <Link href="/sign-in" legacyBehavior>
           <a className="inline-block">
             <p >Sign In</p>
+          </a>
+        </Link>
+        <Link href="/sign-up" legacyBehavior>
+          <a className="inline-block">
+            <p >Sign Up</p>
           </a>
         </Link>
       </div>
